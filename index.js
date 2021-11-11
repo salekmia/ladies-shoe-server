@@ -69,12 +69,27 @@ async function run() {
             res.json(result)
         })
 
+        // get method for reviews
+        app.get('/reviews', async(req, res) => {
+            const reviews = reviewsCollection.find({})
+            const result = await reviews.toArray()
+            res.json(result)
+        })
+
         // delete method for order delete
         app.delete('/orders/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
             const result = await ordersCollection.deleteOne(query);
             res.json(result);
+        })
+
+        // delete method for product delete
+        app.delete('/products/:id', async(req, res) => {
+            const id = req.params.id;
+            const query = {_id: ObjectId(id)}
+            const result = await productsCollection.deleteOne(query)
+            res.json(result)
         })
 
 
