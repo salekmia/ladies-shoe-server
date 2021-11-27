@@ -14,6 +14,18 @@ Frontend or react github code link [Frontend code](https://github.https://github
 * Heroku
 * Github
 
+<h2 align="center">Features</h2>
+
+* If users login then they can go to the dashboard and manage some tasks. Like he can see
+my orders, pay, add a review. Reviews are dynamic. After reviewing, the reviews will be
+added to the review section of the home page.
+* Admin can make another user an admin, if he wants.
+* There is an Admin panel. An admin can also manage some tasks. Like adding products,
+managing products, managing orders etc.
+* If the user doesn't login, click the purchase button then he will go to the login page. And
+after login success he will go to the purchase page automatically.
+
+
 <h2 align="center">Description</h2>
 
 <h3>Before Start</h3>
